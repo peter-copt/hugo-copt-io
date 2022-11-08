@@ -1,21 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "http://hugo.copt.io"
 languageCode = "en-us"
-title = "Alexa Portfolio"
-theme = "alexa-portfolio"
-googleAnalytics = "UA-167869327-1"
+title = "Copt"
 enableRobotsTXT = true
+theme = "agen-hugo"
 
 [params]
-	# favicon = "/images/fav.png"
-	home_title = "Hi, I'am Bona Tua"
-	home_subtitle = "FullStack Web Developer"
-	home_description = "and also has little experience in Mobile development and Design."
-	github = "https://github.com/bonaxcrimo"
-	linkedin = "https://www.linkedin.com/in/bona-tua-1b8685130/"
-	dribbble = "https://dribbble.com/RainMustbeDark"
-	phone = "0812"
-	email = "bonaxcrimo@gmail.com"
-	location = "Jakarta, Indonesia"
 
 [markup]
   [markup.goldmark]
