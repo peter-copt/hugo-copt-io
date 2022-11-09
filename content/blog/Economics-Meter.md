@@ -1,12 +1,12 @@
 ---
-title: "7 things I learned working at a user-centred design agency"
-date: 2019-08-01T16:19:26+06:00
 draft: false
-image: images/blog/post-3.jpg
-bgImage: "images/backgrounds/page-title.jpg"
-description: "this is meta description"
 author: Themefisher
-type : post
+date: 2019-08-01T16:19:26+06:00
+bgImage: images/backgrounds/page-title.jpg
+title: 7 things I learned working at a user-centred design agency (Updated)
+type: post
+image: images/blog/post-3.jpg
+description: this is meta description
 ---
 
 
