@@ -3,7 +3,7 @@ draft: false
 author: Themefisher
 date: 2019-08-01T16:19:26+06:00
 bgImage: images/backgrounds/page-title.jpg
-title: 7 things I learned working at a user-centred design agency (Updated)
+title: 7 things I learned working at a user-centred design agency - new article
 type: post
 image: images/blog/post-3.jpg
 description: this is meta description
