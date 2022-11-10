@@ -20,3 +20,12 @@ collections:
     label: 'Career'
     folder: 'content/career'
     create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Company', name: 'company', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: 'Job Details', name: 'jobDetails', widget: 'list' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
