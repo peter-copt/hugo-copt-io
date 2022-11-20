@@ -1,5 +1,4 @@
 {{ define "main" }}
-
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
 <!-- banner -->
@@ -9,7 +8,17 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1 class="display-1 text-white font-weight-bold font-primary">{{ .title | markdownify }}</h1>
+        <h1 class="display-1 text-black font-weight-bold font-primary">{{ .title | markdownify }}</h1>
+
+        <h2 class="display-5 text-black font-primary">{{ .subtitle | markdownify }}</h2>
+
+        <p class="display-5 text-black font-primary">{{ .second_subtitle | markdownify }}</p>
+
+        <div class="wrapper-buttons">
+          <button class="blue-button">Open Discord</button>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -26,12 +35,11 @@
       <div class="col-lg-10 mx-auto text-center">
         <h2>{{ .title | markdownify }}</h2>
         <p class="lead">{{ .subtitle | markdownify}}</p>
-        <div class="section-border"></div>
       </div>
       {{ end }}
     </div>
     <div class="row">
-      {{ range first 3 .Site.Data.service.services }}
+      {{ range first 6 .Site.Data.service.services }}
       <div class="col-lg-4 mb-4 mb-lg-0">
         <div class="card hover-bg-secondary shadow py-4">
           <div class="card-body text-center">
@@ -40,8 +48,7 @@
                 class="icon-lg icon-box bg-gradient-primary rounded-circle {{ .icon }} mb-5 d-inline-block text-white"></i>
               <i class="icon-lg icon-watermark text-white {{ .icon }}"></i>
             </div>
-            <h4 class="mb-4">{{ .title | markdownify }}</h4>
-            <p>{{ .content | markdownify }}</p>
+
           </div>
         </div>
       </div>

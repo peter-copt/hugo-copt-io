@@ -4,27 +4,27 @@ services:
   - title : "Design"
     icon : "ti-palette" # themify icon pack https://themify.me/themify-icons
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo"
-    
+
   # service item
   - title : "Development"
     icon : "ti-dashboard" # themify icon pack https://themify.me/themify-icons
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo"
-    
+
   # service item
   - title : "Marketing"
     icon : "ti-announcement" # themify icon pack https://themify.me/themify-icons
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo"
-    
+
   # service item
   - title : "Apps"
     icon : "ti-game" # themify icon pack https://themify.me/themify-icons
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo"
-    
+
   # service item
   - title : "Branding"
     icon : "ti-crown" # themify icon pack https://themify.me/themify-icons
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo"
-    
+
   # service item
   - title : "Analytics"
     icon : "ti-bar-chart" # themify icon pack https://themify.me/themify-icons
@@ -36,7 +36,7 @@ feature:
   enable: true
   # feature content comes from 'hompage.yml'
 
-  
+
 ############################## call to action ############################
 cta:
   enable: true
