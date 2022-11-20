@@ -24,3 +24,7 @@ cta:
 title: test
 icon: test
 content: test
+tourList:
+  - date: 2022-11-20T17:36:09.094Z
+    totalPlaces: 3453
+    filledPlaces: 345345
