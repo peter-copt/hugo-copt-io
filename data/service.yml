@@ -1,7 +1,7 @@
 ############################### services ####################################
 services:
   # service item
-  - title : "Design"
+  - title : "Design "
     icon : "ti-palette" # themify icon pack https://themify.me/themify-icons
     content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo"
 

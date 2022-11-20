@@ -1,25 +1,22 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
+  local_backend: true
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: services
-    label: services
+  - name: "services"
+    label: "services"
+    description: "services"
     files:
-      - name: services
-        label: Services
-        file: data/service.yml
+      - label: "services"
+        name: "services"
+        file: "data/service.yml"
         fields:
-          - widget: string
-            name: title
-            label: title
-            required: true
-          - widget: string
-            name: icon
-            label: icon
-            required: true
-          - widget: string
-            name: content
-            label: content
-            required: true
+          - label: "services"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "title", name: "title", widget: "string"}
+              - {label: "icon", name: "icon", widget: "string"}
+              - {label: "content", name: "content", widget: "string"}
