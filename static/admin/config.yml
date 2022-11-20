@@ -4,14 +4,22 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: 'service'
-    label: 'Service'
-    file: 'data/services.yml'
-    create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
-    editor:
-      preview: false
-    fields:
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
-      - { label: 'Description', name: 'description', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+  - name: services
+    label: services
+    files:
+      - name: services
+        label: Services
+        file: data/service.yml
+        fields:
+          - widget: string
+            name: title
+            label: title
+            required: true
+          - widget: string
+            name: icon
+            label: icon
+            required: true
+          - widget: string
+            name: content
+            label: content
+            required: true
