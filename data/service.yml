@@ -17,6 +17,9 @@ services:
   - title: Analytics
     icon: ti-bar-chart
     content: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo
+  - title: new one
+    icon: new one
+    content: new one
 feature:
   enable: true
 cta:
