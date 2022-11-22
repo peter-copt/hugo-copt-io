@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<!-- service -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {{ range .Site.Data.service.sellers }}
+      <div class="col-lg-4 col-sm-6 mb-4">
+        <div class="card hover-bg-secondary shadow py-4">
+          <div class="card-body text-center">
+            <h4 class="mb-4">{{ .title | markdownify }}</h4>
+            <img src="{{ .image_url }}">
+            <p>{{ .content | markdownify }}</p>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<!-- /service -->
+
+
+{{ if .Site.Data.service.feature.enable }}
+{{ partial "feature.html" . }}
+{{ end }}
+
+{{ if .Site.Data.service.cta.enable }}
+{{ partial "cta.html" . }}
+{{ end }}
+
+{{ end }}
