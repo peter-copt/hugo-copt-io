@@ -5,23 +5,6 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-<<<<<<< HEAD
-  - name: "services"
-    label: "services"
-    description: "services"
-    files:
-      - label: "services"
-        name: "services"
-        file: "data/service.yml"
-        fields:
-          - label: "services"
-            name: "services"
-            widget: "list"
-            fields:
-              - {label: "title", name: "title", widget: "string"}
-              - {label: "icon", name: "icon", widget: "string"}
-              - {label: "content", name: "content", widget: "string"}
-=======
   - name: sellers
     label: sellers
     files:
@@ -37,4 +20,3 @@ collections:
             name: image_url
             label: image
             required: true
->>>>>>> ba32600 (New changes for sellers)
