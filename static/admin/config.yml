@@ -5,18 +5,18 @@ backend:
 media_folder: static/img
 public_folder: /img
 collections:
-  - name: sellers
-    label: sellers
+  - name: "sellers"
+    label: "sellers"
+    description: "sellers"
     files:
-      - name: sellers
-        label: Sellers
-        file: data/seller.yml
+      - label: "sellers"
+        name: "sellers"
+        file: "data/seller.yml"
         fields:
-          - widget: string
-            name: title
-            label: title
-            required: true
-          - widget: string
-            name: image_url
-            label: image
-            required: true
+          - label: "sellers"
+            name: "sellers"
+            widget: "list"
+            fields:
+              - {label: "title", name: "title", widget: "string"}
+              - {label: "image_url", name: "image_url", widget: "string"}
+            
