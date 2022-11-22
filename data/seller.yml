@@ -1,6 +1,6 @@
 sellers:
   - title : "Find Curate "
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1623122870/items/uakgylha8jexnlyxj3rn.jpg
+    image_url: "https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1623122870/items/uakgylha8jexnlyxj3rn.jpg"
 
   - title : "Shmurda"
     image_url : "https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648175695/items/iucvwyclsqvi96p6rxod.png"
