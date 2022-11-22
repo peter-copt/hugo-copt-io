@@ -10,7 +10,7 @@ collections:
     files:
       - name: sellers
         label: Sellers
-        file: data/sellers.yml
+        file: data/seller.yml
         fields:
           - widget: string
             name: title
