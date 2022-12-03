@@ -19,4 +19,4 @@ collections:
             fields:
               - {label: "title", name: "title", widget: "string"}
               - {label: "image_url", name: "image_url", widget: "string"}
-            
+              - {label: "url", name: "url", widget: "string"}
