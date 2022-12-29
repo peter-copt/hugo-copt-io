@@ -5,6 +5,9 @@ sellers:
   - title: Shmurda
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648175695/items/iucvwyclsqvi96p6rxod.png
     url: https://shmurda.co
+  - title: Mike Deezy
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648060083/items/n5o9gdxgx9lh39cohh0j.png
+    url: http://mikedeezy.com
 feature:
   enable: true
 cta:
