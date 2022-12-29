@@ -8,6 +8,9 @@ sellers:
   - title: Mike Deezy
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648060083/items/n5o9gdxgx9lh39cohh0j.png
     url: http://mikedeezy.com
+  - title: 506 Soles
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663594726/items/re81yhwps5rnmh0aojqz.jpg
+    url: http://copt.io/shop/506_soles
 feature:
   enable: true
 cta:
