@@ -1,0 +1,33 @@
+{{/* glide.js for homepage carousel */}}
+{{ if .IsHome }}
+{{ $glidejs := resources.Get "static/js/glide.min.js" | fingerprint }}
+<script src="{{- $glidejs.RelPermalink -}}" integrity="{{- $glidejs.Data.Integrity -}}"></script>
+<script>
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+    const peekVal = (vw > 768) ? 35 : 0
+    window.addEventListener('load', function () {
+        new Glide('.glide', { autoplay: 5000, focusAt: "center", peek: peekVal, type: "carousel" }).mount();
+    });
+</script>
+{{ end }}
+
+{{/* Feather icons  */}}
+{{ $feather := resources.Get "static/js/feather.min.js" | fingerprint }}
+<script src="{{- $feather.RelPermalink -}}" integrity="{{- $feather.Data.Integrity -}}"></script>
+<script>feather.replace()</script>
+
+{{/* Mathjax import */}}
+{{ $mathjax_config := resources.Get "js/mathjax-config.js" | minify | fingerprint }}
+<script defer src="{{- $mathjax_config.RelPermalink -}}" integrity="{{- $mathjax_config.Data.Integrity -}}"></script>
+<script defer src={{- "/js/mathjax3/tex-mml-chtml.js" | relURL -}}></script>
+
+{{/* MinSearch for search bar */}}
+{{ if site.Params.minisearch_enabled }}
+{{- partialCached "search" . -}}
+{{ end }}
+
+{{/* Cloudflare Web Analytics */}}
+{{- with site.Params.cf_analytics -}}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js"
+    data-cf-beacon='{"token": "{{- . -}}"}'></script>
+{{- end }}

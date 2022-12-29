@@ -1,0 +1,12 @@
+# Social links
+email = "example@gmail.com"
+twitter = "GoHugoIO"
+github = "y1zhou"
+google_scholar = "yxUduqMAAAAJ"  # Michael Jordan
+linkedin = "satyanadella"  # Satya Nadella
+
+# Google Analytics
+google_analytics = "UA-86032708-3"
+
+# Search in site
+minisearch_enabled = true

@@ -1,0 +1,47 @@
+{{/* Enable image to be loaded from local page dir or media library at `static/img/`. */}}
+
+{{ $image_src := (.Get "src") }}
+{{ $asset := (.Page.Resources.ByType "image").GetMatch (.Get "src") }}
+{{ if $asset }}
+  {{ $image_src = .RelPermalink }}
+{{ end }}
+
+{{/* Get caption. Support legacy `title` option. */}}
+{{ $caption := .Get "title" | default (.Get "caption") | default "" }}
+
+<figure
+  {{ with .Get "class" }} class="{{.}}"{{ end }}
+  {{ with $caption }}id="figure-{{ anchorize . }}"{{ end }}>
+
+  {{ if (ne (.Get "link") "false" ) }}
+  <a href="{{ $image_src }}"
+    target="{{.Get "target" | default "_blank" }}"
+    rel="{{.Get "rel" | default "noreferrer" }}">
+  {{ end -}}
+
+  {{ if $asset }}
+    <img src="{{- $image_src -}}"
+    loading="lazy"
+    alt="{{ with .Get "alt" }}{{.}}{{end}}"
+    width="{{ with (.Get "width") }} {{- . -}} {{ else }} {{- $asset.Width -}} {{end}}"
+    height="{{ with (.Get "height") }} {{- . -}} {{ else }} {{- $asset.Height -}} {{end}}">
+  {{ else }}
+    {{/* Lazy loading for modern browsers */}}
+    <img src="{{$image_src}}"
+      loading="lazy"
+      alt="{{ with .Get "alt" }}{{.}}{{end}}"
+      {{ with (.Get "width") }}width="{{.}}"{{end}}
+      {{ with (.Get "height") }}height="{{.}}"{{end}}>
+  {{ end }}
+
+  {{ if (ne (.Get "link") "false" ) }}</a>{{ end }}
+
+  {{ if $caption }}
+    {{/* Localize the figure numbering (if enabled). */}}
+    {{ $figure := split "Figure %d:" "%d" }}
+    <figcaption>
+      {{ $caption | markdownify | emojify }}
+    </figcaption>
+  {{ end }}
+
+</figure>

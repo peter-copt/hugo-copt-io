@@ -1,0 +1,44 @@
+{{ define "main" }}
+<article class="sm:mx-4">
+    {{/* Post tags, title, metadata and banner image */}}
+    <div class="py-2">
+        {{ partial "post-tags" . }}
+        <h1 class="font-serif text-center pt-2 pb-6 px-6">{{ .Title }}</h1>
+        {{ partial "post-metadata" . }}
+        <div class="my-8 rounded overflow-hidden">
+            {{ with .Params.summary }}
+                <div class="post-summary mb-4 text-center italic text-xl">
+                    {{ . }}
+                </div>
+            {{ end }}
+            {{ $img := (.Resources.ByType "image").GetMatch "*featured*" }}
+            {{ if (or $img .Params.header_image.unsplash_id ) }}
+                {{ .Scratch.Set "set_img_link" true }}
+                {{ .Scratch.Set "set_img_caption" true }}
+                {{ .Scratch.Set "get_large" true }}
+                {{ .Scratch.Set "darken" false }}
+                {{ partial "post-featured-image" . }}
+            {{ end }}
+        </div>
+    </div>
+
+    <div class="article-container max-w-screen-md xl:max-w-screen-lg mx-auto">
+        {{ .Content }}
+    </div>
+
+    {{/* Previous/Next posts in the same category, and other suggested posts */}}
+    <hr class="mt-16" />
+    <div class="mx-auto max-w-screen-md xl:max-w-screen-lg">
+        {{partial "post-prev-next" . }}
+    </div>
+    <div class="mt-8 mb-4 mx-auto max-w-screen-md xl:max-w-screen-lg">
+        {{partial "post-suggestions" . }}
+    </div>
+
+    {{/* Buttons at the bottom-right */}}
+    <div class="fixed bottom-0 right-0 pb-5 pr-5">
+        {{partial "back-to-top-button" }} {{partial "toc-button" . }}
+    </div>
+    {{partial "table-of-contents" . }}
+</article>
+{{ end }}

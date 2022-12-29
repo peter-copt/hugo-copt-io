@@ -1,0 +1,55 @@
+<header id="site-header" class="relative text-lg md:flex md:items-center">
+    {{/* Single row on large screens; two rows on mobile */}}
+    <div class="block relative mx-auto md:flex md:flex-grow md:max-w-screen-lg md:px-3">
+        {{/* Logo and site title */}}
+        {{/* Left on large screen; top-row center on mobile */}}
+        <div class="flex justify-center items-center flex-shrink-0 mr-0 md:mr-5">
+            <a
+            id="nav-homepage"
+            href="{{ .Site.Home.RelPermalink }}"
+            class="flex items-center m-0 py-3 md:flex-none font-bold font-serif tracking-tight hover:bg-transparent"
+            >
+            {{/* Show logo if file exists */}}
+            {{ $logo := resources.Get "images/logo.png" | default (resources.Get "images/logo.svg") }}
+            {{ with $logo }}
+                {{ $logo_proc := .Resize "x42" }}
+                <img src="{{ $logo_proc.RelPermalink }}" class="inline-block pr-1 h-7" alt="{{ site.Title }}" />
+            {{ end }}
+            {{- .Site.Title -}}
+            </a>
+        </div>
+
+        {{/* Navbar menu */}}
+        <div class="flex flex-shrink-0 flex-grow justify-center p-0 md:items-center">
+            {{/* nav links */}}
+            <div class="flex justify-start items-center overflow-x-auto p-0 mr-0 md:mr-auto">
+            {{ range .Site.Sections.ByWeight }}
+                <a
+                    href="{{ .RelPermalink }}"
+                    class="site-header-navlink py-1 px-2 rounded"
+                >
+                    {{ .Title }}
+                </a>
+            {{ end }}
+            {{ with .Site.GetPage "/about" }}
+                <a
+                    href="{{ .RelPermalink }}"
+                    class="site-header-navlink py-1 px-2 rounded"
+                >
+                    {{ .Title }}
+                </a>
+            {{ end }}
+            </div>
+
+            {{/* Search and theme-toggle buttons */}}
+            <div class="flex justify-start items-center p-0 ml-0 md:ml-auto">
+                {{ if site.Params.minisearch_enabled }}
+                <span id="header-search-button">
+                    <i data-feather="search" class="site-header-navlink p-2 rounded w-8 h-8 cursor-pointer"></i>
+                </span>
+                {{ end }}
+                <i id="header-theme-button" data-feather="sun" class="site-header-navlink p-2 rounded w-8 h-8 cursor-pointer"></i>
+            </div>
+        </div>
+    </div>
+</header>

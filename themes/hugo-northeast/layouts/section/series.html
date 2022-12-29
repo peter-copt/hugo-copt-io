@@ -1,0 +1,32 @@
+{{ define "main" }}
+{{ .Scratch.Set "feat_card_href" false }}
+{{ .Scratch.Set "feat_card_content" true }}
+{{ .Scratch.Set "feat_card_metadata" false }}
+<div class="max-w-6xl mx-auto">
+    {{ partial "post-featured-card" . }}
+</div>
+<div class="listview-wrapper flex flex-col space-y-1 text-xl max-w-6xl mx-auto">
+    {{ range (.Pages.GroupByDate "2006").Reverse }}
+    <div class="font-sans text-2xl mt-4 mb-2">{{ .Key }}</div>
+    {{ range .Pages.ByWeight }}
+        <a href="{{ .RelPermalink }}" class="hover:bg-transparent">
+            <div class="flex flex-row items-center justify-between py-1 px-1 listview-row">
+                <div class="flex flex-row flex-wrap items-center font-serif">
+                    {{ if (not .IsPage) }}
+                    <i data-feather="folder" class=" inline-block mr-1 w-4 h-4"></i>
+                    {{ end }}
+                    {{- .Title -}}
+                </div>
+
+                <div class="flex flex-row flex-shrink-0 items-center text-ne-on-surface font-semibold tracking-tighter text-sm">
+                    {{ if .Params.featured }}
+                    <i data-feather="star" class="inline-block mr-1 text-sm text-ne-primary-dark w-4 h-4" fill="#FCD34D"></i>
+                    {{ end }}
+                    {{- dateFormat "Jan 02" .PublishDate -}}
+                </div>
+            </div>
+        </a>
+    {{ end }}
+    {{ end }}
+</div>
+{{ end }}

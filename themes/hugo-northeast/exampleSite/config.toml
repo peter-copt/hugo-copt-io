@@ -1,0 +1,33 @@
+title = "Hugo Northeast"
+author = "John Doe"
+baseurl = "http://example.com/"
+languageCode = "en-us"
+
+theme = "hugo-northeast"
+enableGitInfo = true
+copyright = "2019-{year}"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true  # Enable user to embed HTML snippets in Markdown content.
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    noClasses = false
+    tabWidth = 2
+  [markup.tableOfContents]
+    startLevel = 1
+    endLevel = 3
+    ordered = true
+
+[outputs]
+    home = ["HTML", "RSS", "MiniSearch"]
+
+[outputFormats.MiniSearch]
+    mediaType = "application/json"
+    baseName = "minisearch"
+    isPlainText = true
+    notAlternative = true

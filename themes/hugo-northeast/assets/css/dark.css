@@ -1,0 +1,212 @@
+@import "assets/css/chroma_highlight/dracula";
+
+/* Text elements */
+body {
+    @apply bg-ne-background-dark;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply text-ne-on-background-dark;
+}
+
+p {
+    @apply text-ne-on-background-dark;
+}
+
+mark {
+    @apply bg-ne-primary-darker;
+}
+
+.article-container blockquote :not(code) {
+    @apply text-ne-on-surface-dark !important;
+}
+
+:not(pre) > code {
+    @apply text-ne-on-error-dark bg-ne-error-dark rounded-sm;
+}
+
+code.has-jax,
+div.has-jax {
+    @apply text-ne-on-background-dark;
+}
+
+.article-container img {
+    filter: brightness(0.85) contrast(1.2);
+}
+
+.article-container img:hover {
+    filter: none;
+}
+
+.article-container a {
+    @apply text-ne-secondary-dark;
+}
+
+.article-container ul,
+.article-container ol {
+    @apply text-ne-on-background-dark;
+}
+
+.article-container table {
+    @apply bg-ne-background-dark border-ne-surface-dark text-ne-on-background-dark;
+}
+
+.article-container tbody tr:nth-child(even) {
+    @apply bg-ne-surface-darker;
+}
+.article-container tbody tr:hover {
+    @apply bg-ne-on-surface;
+}
+
+.article-container figcaption,
+.article-container .figure p.caption {
+    @apply text-ne-on-surface-dark;
+}
+
+.article-container .alert-warning {
+    @apply text-ne-on-error-dark bg-ne-error-dark;
+}
+
+section.footnotes:before {
+    @apply text-ne-on-surface-dark bg-ne-background-dark;
+}
+
+.post-footer {
+    @apply text-ne-on-surface-dark hover:text-ne-on-surface-dark;
+}
+
+.post-footer tr:hover {
+    @apply text-ne-on-background-dark;
+}
+
+.post-summary {
+    @apply text-ne-on-surface-dark;
+}
+
+/* Sidebar table of contents */
+#toc-list ol {
+    @apply text-ne-on-background-dark border-ne-surface-dark;
+}
+
+#toc-list a:hover {
+    @apply bg-ne-surface-dark;
+}
+
+#toc-container {
+    @apply bg-ne-background-dark;
+}
+
+#toc-top-divider {
+    @apply border-ne-surface-dark;
+}
+
+#toc-top-divider::after {
+    @apply text-ne-on-surface-dark bg-ne-background-dark;
+}
+
+#toc-background-mask,
+#search-screen {
+    @apply bg-ne-background-dark bg-opacity-60;
+}
+
+/* Search screen */
+#search-wrapper {
+    @apply bg-ne-surface-darker;
+}
+#search-input {
+    @apply border-b border-ne-surface-dark text-ne-on-surface-dark;
+}
+#search-input input {
+    @apply bg-ne-surface-darker text-ne-on-surface-dark;
+}
+
+ul.search-results {
+    @apply text-ne-on-surface-dark;
+}
+
+ul.search-results li {
+    @apply border-ne-surface-dark;
+}
+
+ul.search-results li:hover {
+    @apply bg-ne-surface-dark;
+}
+
+.search-results .search-res-title {
+    @apply text-ne-on-background-dark;
+}
+
+.search-results .search-res-date {
+    @apply text-ne-on-surface;
+}
+
+.search-results .search-res-content {
+    @apply text-ne-on-surface-dark;
+}
+
+/* Unified buttons style */
+.round-button {
+    @apply bg-ne-surface-dark;
+}
+
+.round-button button,
+button.round-button {
+    @apply text-ne-on-surface-dark hover:text-ne-on-primary;
+}
+
+/* Site header */
+#site-header {
+    @apply border-b border-ne-surface-dark text-ne-on-surface-dark;
+}
+
+.site-header-navlink:hover {
+    @apply bg-ne-surface-dark text-ne-on-surface-lighter;
+}
+
+/* Publication related */
+#publication-metadata {
+    @apply text-ne-on-surface-dark;
+}
+
+.listview-wrapper {
+    @apply text-ne-on-surface-dark;
+}
+
+.listview-row {
+    @apply hover:bg-ne-surface-dark hover:text-ne-on-background-dark transition-all duration-150 ease-linear;
+}
+
+/* Styling cards and elements */
+.post-card {
+    @apply border border-ne-surface-dark text-ne-on-background-dark;
+}
+
+.gray-tag {
+    @apply text-ne-on-surface-dark bg-ne-surface-dark hover:text-ne-on-primary hover:bg-ne-primary-dark;
+}
+
+/* Homepage pagination */
+ul.pagination {
+    @apply border-ne-surface-dark;
+}
+
+li.page-item {
+    @apply border-ne-surface-dark text-ne-on-surface-dark;
+}
+
+li.page-item:not(.disabled) {
+    @apply hover:bg-ne-surface-dark;
+}
+
+li.page-item.active {
+    @apply text-ne-on-background-dark border-t-2 border-ne-primary-dark;
+}
+
+li.page-item.disabled {
+    @apply text-ne-surface-dark;
+}

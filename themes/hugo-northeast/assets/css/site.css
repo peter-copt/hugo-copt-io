@@ -1,0 +1,447 @@
+/* jetbrains-mono-regular - latin */
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Jetbrains Mono"),
+        url("../fonts/jetbrains-mono-v6-latin-regular.woff2") format("woff2");
+    font-display: swap;
+}
+
+/* open-sans-regular - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/open-sans-v18-latin-regular.woff2") format("woff2");
+    font-display: swap;
+}
+/* open-sans-italic - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/open-sans-v18-latin-italic.woff2") format("woff2");
+    font-display: swap;
+}
+/* open-sans-700 - latin */
+@font-face {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/open-sans-v18-latin-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+/* pt-serif-regular - latin */
+@font-face {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/pt-serif-v12-latin-regular.woff2") format("woff2");
+    font-display: swap;
+}
+/* pt-serif-italic - latin */
+@font-face {
+    font-family: "PT Serif";
+    font-style: italic;
+    font-weight: 400;
+    src: url("../fonts/pt-serif-v12-latin-italic.woff2") format("woff2");
+    font-display: swap;
+}
+/* pt-serif-700 - latin */
+@font-face {
+    font-family: "PT Serif";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/pt-serif-v12-latin-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+/* Site-wide smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ################################# */
+/* #         Overall design        # */
+/* ################################# */
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-sans font-bold text-xl;
+    @apply pt-4 pb-2;
+}
+h1 {
+    @apply text-5xl;
+}
+h2 {
+    @apply text-4xl;
+}
+h3 {
+    @apply text-3xl;
+}
+h4 {
+    @apply text-2xl;
+}
+h6 {
+    @apply font-normal;
+}
+
+/* Text elements */
+p {
+    @apply font-serif;
+}
+
+a {
+    @apply transition-all duration-150 ease-linear;
+}
+
+hr {
+    @apply mt-6 py-2;
+}
+
+/* Blockquote */
+blockquote {
+    @apply font-serif pl-10 pr-2 py-4 my-2 relative border-l-2 border-ne-primary-dark md:pl-16 md:ml-4 md:pr-4;
+}
+
+blockquote::before {
+    @apply absolute font-serif text-ne-primary text-8xl left-2 -top-0.5 !important;
+    content: "\201C";
+}
+
+/* Code highlight */
+pre {
+    @apply overflow-auto py-3;
+}
+
+.highlight {
+    @apply my-2 ml-2;
+}
+
+.highlight > div {
+    @apply rounded-md;
+}
+
+/* First one is the line numbers, second one is the actual code */
+.highlight td:first-child pre {
+    @apply pl-3 rounded-l-md;
+}
+
+.highlight tbody tr:hover {
+    @apply bg-transparent !important;
+}
+
+/* ################################# */
+/* #         Post articles         # */
+/* ################################# */
+article {
+    @apply text-lg;
+}
+
+/* Figures */
+.article-container img {
+    @apply my-4 max-w-full mx-auto;
+}
+
+/* Lists */
+.article-container ul {
+    @apply font-serif list-disc list-outside pl-8;
+}
+
+.article-container ol {
+    @apply font-serif list-decimal list-outside pl-8;
+}
+
+.article-container li {
+    @apply py-1;
+}
+
+/* Text elements */
+.article-container a {
+    @apply underline hover:text-ne-primary-darker;
+}
+
+.article-container p {
+    @apply py-1 mb-2 text-lg leading-relaxed text-left break-normal;
+}
+
+/* .article-container pre code { */
+/*     @apply text-base; */
+/* } */
+
+.article-container ol > li::marker {
+    @apply font-bold;
+}
+
+.article-container figcaption,
+.article-container .figure p.caption {
+    @apply block mt-3 mb-6 text-base font-sans leading-normal text-center;
+}
+
+/* Tables */
+.article-container table {
+    @apply block mx-auto my-4 font-serif;
+    @apply overflow-y-hidden overflow-x-auto;
+    max-width: fit-content;
+}
+
+.article-container tr th {
+    @apply px-4 py-1 border-b-2 text-left;
+}
+.article-container tr td {
+    @apply border px-4 py-2;
+}
+
+.article-container tr td:first-child {
+    @apply border-l-0;
+}
+
+.article-container tr td:last-child {
+    @apply border-r-0;
+}
+
+/* Overflow long math equations for MathJax */
+mjx-container[display="true"] {
+    @apply overflow-x-auto overflow-y-hidden min-w-0 !important;
+}
+
+/* In-line math from https://geoffruddock.com/math-typesetting-in-hugo/ */
+code.has-jax {
+    -webkit-font-smoothing: antialiased;
+    background: inherit !important;
+    border: none !important;
+    font-size: 100%;
+}
+
+/* Better looking footnotes */
+section.footnotes {
+    @apply mt-12;
+}
+section.footnotes:before {
+    content: "Footnotes";
+    @apply absolute font-serif font-bold pr-2 transform -translate-y-4;
+}
+
+a.footnote-ref {
+    @apply no-underline font-bold;
+}
+a.footnote-ref::before {
+    content: "[";
+}
+a.footnote-ref::after {
+    content: "]";
+}
+
+.footnotes p {
+    @apply py-0 text-base font-serif;
+}
+
+.footnotes ol {
+    @apply text-base font-serif pl-4;
+}
+
+/* ################################# */
+/* #       Table of contents       # */
+/* ################################# */
+#toc-list ol {
+    @apply pl-3 m-1 border-l-2;
+    counter-reset: tocitem;
+}
+
+#toc-top-divider::after {
+    content: "Table of Contents";
+    @apply inline-block font-bold pr-2 transform -translate-y-4;
+}
+
+#toc-list > #TableOfContents > ol {
+    @apply border-0;
+}
+
+#toc-list a {
+    @apply inline-block w-full rounded px-3 leading-relaxed transition-none;
+}
+
+#toc-list ol > li {
+    @apply block my-1;
+    counter-increment: tocitem;
+}
+
+#toc-list li > a::before {
+    @apply mr-2 -ml-3 font-semibold;
+    content: counters(tocitem, ".");
+}
+
+/* ################################# */
+/* #         TOC & Search          # */
+/* ################################# */
+#toc-background-mask.active,
+#search-screen.active {
+    opacity: 1;
+}
+.toc-hidden,
+.search-hidden {
+    @apply opacity-0 invisible transition-opacity duration-300 ease-in;
+}
+
+/* ################################# */
+/* #        Search results         # */
+/* ################################# */
+ul.search-results {
+    @apply leading-6;
+}
+
+ul.search-results li {
+    @apply py-1 border-b px-4;
+}
+
+.search-results .search-res-header {
+    @apply flex flex-row justify-between;
+}
+
+.search-results .search-res-title {
+    @apply font-semibold;
+}
+
+.search-results .search-res-title mark {
+    @apply px-1;
+}
+
+.search-results .search-res-date {
+    @apply flex-shrink-0 text-sm;
+}
+
+.search-results .search-res-content {
+    @apply text-sm;
+}
+
+/* ################################# */
+/* #      Specific elements        # */
+/* ################################# */
+
+/* Glide.js v3.4.1 glide.core.min.js */
+.glide {
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.glide * {
+    box-sizing: inherit;
+}
+.glide__track {
+    overflow: hidden;
+}
+.glide__slides {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    touch-action: pan-Y;
+    overflow: hidden;
+    padding: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    will-change: transform;
+}
+.glide__slides--dragging {
+    user-select: none;
+}
+.glide__slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    white-space: normal;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.glide__slide a {
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+.glide__arrows {
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+.glide__bullets {
+    -webkit-touch-callout: none;
+    user-select: none;
+}
+.glide--rtl {
+    direction: rtl;
+}
+
+@media (min-width: 768px) {
+    .home-post-card {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+.site-header-navlink {
+    @apply transition-all duration-150 ease-linear;
+}
+
+.post-feat-card-content * {
+    @apply text-ne-on-background-dark;
+}
+
+.post-card {
+    @apply transition ease-in-out duration-300;
+}
+
+@media (min-width: 768px) {
+    .post-card {
+        min-height: 20rem;
+        max-height: 38rem;
+    }
+}
+
+.post-card:hover {
+    @apply transform -translate-y-1;
+}
+
+ul.pagination {
+    @apply flex flex-row flex-wrap w-full items-center justify-center border-t;
+}
+
+li.page-item {
+    @apply py-1 px-2 md:px-4;
+}
+
+li.page-item.active {
+    @apply font-bold border-t-2;
+}
+
+iframe.instagram-media,
+.twitter-tweet {
+    @apply mx-auto !important;
+}
+
+/* Unified buttons style */
+.round-button {
+    @apply rounded-full transition-all duration-150 ease-linear hover:bg-ne-primary-dark hover:text-ne-on-primary;
+}
+
+.round-button button,
+button.round-button {
+    @apply font-bold;
+}
+
+.social-button {
+    @apply h-8 w-8 flex items-center justify-center bg-ne-surface-darker hover:bg-ne-primary-dark text-white hover:text-ne-on-primary !important;
+}
