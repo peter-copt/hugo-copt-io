@@ -11,31 +11,9 @@
                 {{ end }}
             </div>
         </div>
-        <div data-glide-el="controls" class="glide__arrows absolute inset-y-1/2 text-white w-full px-1 md:px-4">
-            <button data-glide-dir="<" class="round-button w-8 h-8 float-left focus:outline-none hidden md:block"
-                aria-label="Previous">
-                <i data-feather="chevron-left" class="w-6 h-6 mx-1"></i>
-            </button>
-            <button data-glide-dir=">" class="round-button w-8 h-8 float-right focus:outline-none hidden md:block"
-                aria-label="Next">
-                <i data-feather="chevron-right" class="w-6 h-6 mx-1"></i>
-            </button>
-        </div>
+        
     </div>
 
-    {{/* Card view of other posts */}}
-    {{ $homepage_types := slice "posts" "series" }}
-    {{ $paginator := .Paginate (where site.RegularPages.ByPublishDate.Reverse "Type" "in" $homepage_types) }}
-    <div class="flex flex-initial flex-row flex-wrap justify-center my-8 max-w-5xl">
-        <div class="flex flex-wrap mb-2 flex-grow max-w-full">
-            {{ range $paginator.Pages }}
-            <div class="home-post-card relative p-0 my-2 w-full md:px-3">
-                {{partial "post-card" . }}
-            </div>
-            {{ end }}
-        </div>
-    </div>
 
-    {{ template "_internal/pagination.html" . }}
 </article>
 {{ end }}

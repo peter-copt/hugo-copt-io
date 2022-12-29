@@ -8,12 +8,15 @@
     <body class="page-{{- .Kind }} flex flex-col min-h-screen">
         {{- partial "dev-size-indicator.html" . -}}
         {{- partialCached "header.html" . -}}
+
+        {{ range first 6 .Site.Data.seller.sellers }}
+        <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="{{ .image_url }}" alt="" width="120" height="120">
+        {{ end }}
+        
         <main class="flex-1 mx-4 pb-12 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
         {{- block "main" . }}{{- end }}
         </main>
-        {{- partial "dev-parameters.html" . -}}
 
-        {{- partialCached "footer/footer.html" . -}}
-        {{- partial "footer/scripts.html" . -}}
+
     </body>
 </html>
