@@ -9,27 +9,27 @@
         <style>
         @import url('https://fonts.cdnfonts.com/css/gotham');
         </style>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600&display=swap" rel="stylesheet">
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600&display=swap');
+        </style>
+
     </head>
     <body class="page-{{- .Kind }} flex flex-col min-h-screen">
         {{- partial "dev-size-indicator.html" . -}}
-        {{- partialCached "header.html" . -}}
-
-        <!-- <div class="flex h-screen">
-          <div class="m-auto">
-            <h3>title</h3>
-            <button>button</button>
-          </div>
-        </div> -->
 
         <div class="grid grid-cols-1">
           <div class="flex grid grid-cols-1 bg-yellow-500 gap-6">
             <div class="h-32 m-auto">
-              <p class="text-4xl pt-6 pl-2" style="font-family: Gotham;">
+              <p class="text-5xl pt-6 pl-10" style="font-family: 'Exo 2'; font-weight: 850;">
                 COPT
               </p>
             </div>
             <div class="h-16 m-auto">
-              <p class="text-2xl pl-2" style="font-family: Gotham; font-weight: 400;font-style: normal">
+              <p class="text-3xl pl-2" style="font-family: Gotham; font-weight: 400; font-style: normal; font-weight: 400;">
                 SAFE, FAST PAYMENTS.
               <p>
             </div>
@@ -66,9 +66,6 @@
         </div>
 
 
-        <main class="flex-1 mx-4 pb-12 md:mx-12 lg:mx-24 mt-4 sm:mt-16">
-        {{- block "main" . }}{{- end }}
-        </main>
 
 
     </body>
