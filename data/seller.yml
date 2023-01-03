@@ -11,6 +11,9 @@ sellers:
   - title: 506 Soles
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663594726/items/re81yhwps5rnmh0aojqz.jpg
     url: http://copt.io/shop/506_soles
+  - title: Evasion
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1668368190/items/ut5zinwnpthd3kaz8kqh.png
+    url: https://evasionkicks.com/
 feature:
   enable: true
 cta:
