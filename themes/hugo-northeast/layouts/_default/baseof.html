@@ -16,7 +16,7 @@
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600&display=swap');
         </style>
-
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     </head>
     <body class="page-{{- .Kind }} flex flex-col min-h-screen">
         {{- partial "dev-size-indicator.html" . -}}
@@ -40,29 +40,28 @@
             </div>
 
             <div class="m-auto pb-10">
-              <button class="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-indigo-700 rounded-lg focus:shadow-outline hover:bg-indigo-800">Join our Discord</button>
+              <button class="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-black rounded-full focus:shadow-outline hover:bg-indigo-800"><i class='fab fa-discord' style='font-size:24px'></i>&nbsp;Join our Discord</button>
             </div>
 
           </div>
 
           <div class="flex grid grid-cols-1 gap-6">
-            <div class="h-16 m-auto pt-12">
-              <p class="text-3xl pl-2" style="font-family: Gotham; font-weight: 400;font-style: normal">
+            <div class="h-16 m-auto pt-12 col-span-1">
+              <p class="text-3xl pl-2" style="font-family: Gotham; font-weight: 400;font-style: normal;text-align: center;">
                 OUR VERIFIED SELLERS
               </p>
-            </div>
-            <div class="h-16 m-auto">
-              <p class="text-xl pl-2" style="font-family: Gotham; font-weight: 400;font-style: normal">
+              <p class="text-xl pl-2" style="font-family: Gotham; font-weight: 400;font-style: normal;text-align: center;">
                 Check out the shops of our most trusted sellers in the community.
               </p>
+              <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 m-auto">
+                {{ range first 6 .Site.Data.seller.sellers }}
+                    <div class="p-10"><a href="{{ .url }}"><img class="border-4 border-grey w-24 h-24 md:w-48 md:h-auto rounded-full mx-auto" src="{{ .image_url }}" alt="" width="120" height="120"></a></div>
+                {{ end }}
+              </div>
             </div>
+
           </div>
 
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 m-auto">
-            {{ range first 6 .Site.Data.seller.sellers }}
-                <div class="p-10"><a href="{{ .url }}"><img class="border-4 border-grey w-24 h-24 md:w-48 md:h-auto rounded-full mx-auto" src="{{ .image_url }}" alt="" width="120" height="120"></a></div>
-            {{ end }}
-          </div>
         </div>
 
 
