@@ -59,7 +59,7 @@
               </p>
               <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4 m-auto">
                 {{ range first 6 .Site.Data.seller.sellers }}
-                    <div class="p-10"><a href="{{ .url }}"><img class="border-4 border-grey rounded-full mx-auto w-48 h-48" src="{{ .image_url }}" alt="" width="120" height="120"></a></div>
+                    <div class="p-10"><a href="{{ .url }}"><span class="border-8 border-white rounded-full"><img class="border-4 border-grey rounded-full mx-auto w-48 h-48" src="{{ .image_url }}" alt="" width="120" height="120"></span></a></div>
                 {{ end }}
               </div>
             </div>
