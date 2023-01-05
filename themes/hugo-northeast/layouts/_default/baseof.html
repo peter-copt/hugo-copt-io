@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='{{ .Site.LanguageCode }}' style="background-color:#ffcd00">
+<html lang='{{ .Site.LanguageCode }}'>
     <head>
         {{ partial "head/meta.html" . }}
         {{ partialCached "head/css.html" . }}
@@ -22,7 +22,7 @@
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" data-react-helmet="true">        
         <meta name="theme-color" content="#ffcd00" data-react-helmet="true">
     </head>
-    <body class="page-{{- .Kind }} flex flex-col min-h-screen" style="background-color: #ffffff">
+    <body class="page-{{- .Kind }} flex flex-col min-h-screen">
         {{- partial "dev-size-indicator.html" . -}}
 
         
