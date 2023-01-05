@@ -11,12 +11,12 @@ sellers:
   - title: Shmurda
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648175695/items/iucvwyclsqvi96p6rxod.png
     url: https://shmurda.co
-  - title: Mike Deezy
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648060083/items/n5o9gdxgx9lh39cohh0j.png
-    url: http://mikedeezy.com
   - title: The Era
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1667339630/items/acyjllvlyuc4ogpibfwc.jpg
     url: https://copt.io/shop/the%20era
+  - title: Mike Deezy
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648060083/items/n5o9gdxgx9lh39cohh0j.png
+    url: http://mikedeezy.com
 feature:
   enable: true
 cta:
