@@ -32,6 +32,9 @@ sellers:
   - title: snkr%20feinz%20vi
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1670926663/items/sd7hc0lcx0jzjjdbemew.jpg
     url: https://copt.io/shop/snkr%20feinz%20vip
+  - title: mooskys_hype
+    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1666825379/items/grf6mosrypuskzoz675x.jpg
+    url: https://copt.io/shop/mooskys_hype/
   - title: Nysole.swap
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663809039/items/gz53ktmyfbiqkjzwp6zt.jpg
     url: https://copt.io/shop/Nysole.swap/
@@ -50,9 +53,6 @@ sellers:
   - title: ktown.resells
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1666762551/items/r6bjey96jjtbum8ih4kf.jpg
     url: https://copt.io/shop/ktown.resells/
-  - title: mooskys_hype
-    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1666825379/items/grf6mosrypuskzoz675x.jpg
-    url: https://copt.io/shop/mooskys_hype/
   - title: ctx.sole
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1667488240/items/wdveczfj2sdnemgs0eon.jpg
     url: https://copt.io/shop/ctx.soles
