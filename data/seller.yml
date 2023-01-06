@@ -14,6 +14,9 @@ sellers:
   - title: The Era
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1667339630/items/acyjllvlyuc4ogpibfwc.jpg
     url: https://the-era.us
+  - title: Kickznation58
+    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1669911594/items/jalx8m9c2ba4vulxaiyk.jpg
+    url: https://copt.io/shop/Kickznation586
   - title: Mike Deezy
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648060083/items/n5o9gdxgx9lh39cohh0j.png
     url: http://mikedeezy.com
@@ -62,9 +65,6 @@ sellers:
   - title: Smekick
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1669739066/items/tiglfwlg7mxyshlkhfjc.png
     url: https://copt.io/shop/Smekicks
-  - title: Kickznation58
-    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1669911594/items/jalx8m9c2ba4vulxaiyk.jpg
-    url: https://copt.io/shop/Kickznation586
   - title: SpencersKick
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1670037052/items/w8xoyqjomshgk93ongbv.png
     url: https://copt.io/shop/SpencersKicks
