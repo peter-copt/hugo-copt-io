@@ -32,12 +32,6 @@ sellers:
   - title: snkr%20feinz%20vi
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1670926663/items/sd7hc0lcx0jzjjdbemew.jpg
     url: https://copt.io/shop/snkr%20feinz%20vip
-  - title: 506_soles
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663594726/items/re81yhwps5rnmh0aojqz.jpg
-    url: https://copt.io/shop/506_soles/
-  - title: pbchavi
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1662577223/items/i6kig0c1pp5qfmfnceau.jpg
-    url: https://copt.io/shop/pbchavi/
   - title: Nysole.swap
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663809039/items/gz53ktmyfbiqkjzwp6zt.jpg
     url: https://copt.io/shop/Nysole.swap/
@@ -80,6 +74,12 @@ sellers:
   - title: Filo.resell
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1672444042/items/tvvdtfv0feyryroteu5r.jpg
     url: https://copt.io/shop/Filo.resell/
+  - title: 506_soles
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663594726/items/re81yhwps5rnmh0aojqz.jpg
+    url: https://copt.io/shop/506_soles/
+  - title: pbchavi
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1662577223/items/i6kig0c1pp5qfmfnceau.jpg
+    url: https://copt.io/shop/pbchavi/
 feature:
   enable: true
 cta:
