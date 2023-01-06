@@ -31,24 +31,24 @@
 
         <div class="flex grid grid-cols-1 gap-6">
 
-            <div class="flex flex-col content-center px-10" style="background-color:#ffcd00">
-              <div class="basis-1/4 mx-auto py-10">
+            <div class="flex grid grid-cols-1 content-center px-10" style="background-color:#ffcd00">
+              <div class="mx-auto py-10">
                 <p class="text-6xl sm:text-center" style="font-family: 'Exo 2'; font-weight: 700;">
                   COPT
                 </p>
               </div>
-              <div class="basis-1/4 mx-auto py-5">
+              <div class="mx-auto py-5">
                 <p class="text-3xl sm:text-center" style="font-family: Gotham; font-weight: 400; font-style: normal; font-weight: 400; text-align: center;">
                   SAFE. FAST. PAYMENTS.
                 <p>
               </div>
-              <div class="basis-1/4 mx-auto py-5">
+              <div class="mx-auto py-5">
                 <p class="text-2xl sm:text-center" style="font-family: Gotham; font-weight: 200;font-style: normal; text-align: center;">
                   Sell. Get paid. Shop. Join our rapidly growing community of buyers and sellers.
                 </p>
               </div>
 
-              <div class="basis-1/4 mx-auto py-5 pb-10">
+              <div class="mx-auto py-5 pb-10">
                   <a href="https://discord.com/invite/wbqGpEhapP">
                       <button class="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-black rounded-full focus:shadow-outline hover:bg-indigo-800"><i class='fab fa-discord' style='font-size:24px'></i>&nbsp;Join our Discord</button>
                   </a>
@@ -66,7 +66,7 @@
                 </p>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 m-auto">
                   {{ range first 6 .Site.Data.seller.sellers }}
-                      <div class="p-6 mx-auto"><a href="{{ .url }}"><img class="w-40 border-4 border-grey rounded-full" src="{{ .image_url }}" alt="" width="120" height="120"></a></div>
+                      <div class="p-7 mx-auto"><a href="{{ .url }}"><img class="w-40 border-4 border-grey rounded-full" src="{{ .image_url }}" alt="" width="120" height="120"></a></div>
                   {{ end }}
                 </div>
               </div>
