@@ -29,6 +29,9 @@ sellers:
   - title: dannysnft
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664853201/items/asp7ypkiupg73ftoz6e2.jpg
     url: https://copt.io/shop/dannysnft/
+  - title: snkr%20feinz%20vi
+    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1670926663/items/sd7hc0lcx0jzjjdbemew.jpg
+    url: https://copt.io/shop/snkr%20feinz%20vip
   - title: 506_soles
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663594726/items/re81yhwps5rnmh0aojqz.jpg
     url: https://copt.io/shop/506_soles/
@@ -71,9 +74,6 @@ sellers:
   - title: BackdoorL
     image_url: https://copt.io/b6f16ba064c3ce8c726325f2c21f6cf4.png
     url: https://copt.io/shop/BackdoorLA
-  - title: snkr%20feinz%20vi
-    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1670926663/items/sd7hc0lcx0jzjjdbemew.jpg
-    url: https://copt.io/shop/snkr%20feinz%20vip
   - title: HighAltitude_snkr_c
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1671494109/items/fe9fk4l6niwbphxddhhz.jpg
     url: https://copt.io/shop/HighAltitude_snkr_co
