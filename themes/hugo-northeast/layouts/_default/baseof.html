@@ -49,7 +49,7 @@
               </div>
               <div class="mx-auto py-5">
                 <p class="text-2xl sm:text-center" style="font-family: Gotham; font-weight: 200;font-style: normal; text-align: center;">
-                    Take fraud-protected credit/debit card payments with no fees.  
+                    Take fraud-protected credit/debit card payments with no fees.
                   <!-- Sell. Get paid. Shop. Join our rapidly growing community of buyers and sellers. -->
                 </p>
               </div>
@@ -74,7 +74,7 @@
                   Buy from our most trusted sellers in the community.
                 </p>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 m-auto">
-                  {{ range first 6 .Site.Data.seller.sellers }}
+                  {{ range first 60 .Site.Data.seller.sellers }}
                       <div class="p-7 mx-auto"><a href="{{ .url }}"><img class="w-40 border-4 border-grey rounded-full" src="{{ .image_url }}" alt="" width="120" height="120"></a></div>
                   {{ end }}
                 </div>
@@ -88,7 +88,7 @@
                   </a>
               </div>
             </div>
-            
+
         </div>
     </body>
 </html>
