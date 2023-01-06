@@ -20,6 +20,9 @@ sellers:
   - title: Kickznation58
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1669911594/items/jalx8m9c2ba4vulxaiyk.jpg
     url: https://copt.io/shop/Kickznation586
+  - title: fidel.ludena
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664416270/items/hpxzjylhydi2mzi7x3st.jpg
+    url: https://copt.io/shop/fidel.ludena/
   - title: dannysnft
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664853201/items/asp7ypkiupg73ftoz6e2.jpg
     url: https://copt.io/shop/dannysnft/
@@ -35,9 +38,6 @@ sellers:
   - title: KTSSneakers
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1663888205/items/iwljboxg2d8ttjftugay.jpg
     url: https://copt.io/shop/KTSSneakers/
-  - title: fidel.ludena
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664416270/items/hpxzjylhydi2mzi7x3st.jpg
-    url: https://copt.io/shop/fidel.ludena/
   - title: Trapps.Closet
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664998879/items/orthenwcabwanhb3nymr.jpg
     url: https://copt.io/shop/Trapps.Closet/
