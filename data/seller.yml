@@ -53,6 +53,15 @@ sellers:
   - title: KTSSneakers
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1663888205/items/iwljboxg2d8ttjftugay.jpg
     url: https://copt.io/shop/KTSSneakers/
+  - title: Smekick
+    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1669739066/items/tiglfwlg7mxyshlkhfjc.png
+    url: https://copt.io/shop/Smekicks
+  - title: Filo.resell
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1672444042/items/tvvdtfv0feyryroteu5r.jpg
+    url: https://copt.io/shop/Filo.resell/
+  - title: HighAltitude_snkr_c
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1671494109/items/fe9fk4l6niwbphxddhhz.jpg
+    url: https://copt.io/shop/HighAltitude_snkr_co
   - title: Trapps.Closet
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664998879/items/orthenwcabwanhb3nymr.jpg
     url: https://copt.io/shop/Trapps.Closet/
@@ -65,21 +74,12 @@ sellers:
   - title: ShaolinSoleDow
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1673051182/items/fccad2ix8gejdc9jpqnp.jpg
     url: https://copt.io/shop/ShaolinSoleDown
-  - title: Smekick
-    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1669739066/items/tiglfwlg7mxyshlkhfjc.png
-    url: https://copt.io/shop/Smekicks
   - title: SpencersKick
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1670037052/items/w8xoyqjomshgk93ongbv.png
     url: https://copt.io/shop/SpencersKicks
   - title: BackdoorL
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1673051310/items/zpurfiongojlpqnbwwos.jpg
     url: https://copt.io/shop/BackdoorLA
-  - title: HighAltitude_snkr_c
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1671494109/items/fe9fk4l6niwbphxddhhz.jpg
-    url: https://copt.io/shop/HighAltitude_snkr_co
-  - title: Filo.resell
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1672444042/items/tvvdtfv0feyryroteu5r.jpg
-    url: https://copt.io/shop/Filo.resell/
   - title: pbchavi
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1662577223/items/i6kig0c1pp5qfmfnceau.jpg
     url: https://copt.io/shop/pbchavi/
