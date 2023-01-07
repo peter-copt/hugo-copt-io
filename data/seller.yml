@@ -17,6 +17,15 @@ sellers:
   - title: Mike Deezy
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648060083/items/n5o9gdxgx9lh39cohh0j.png
     url: http://mikedeezy.com
+  - title: fidel.ludena
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664416270/items/hpxzjylhydi2mzi7x3st.jpg
+    url: https://copt.io/shop/fidel.ludena/
+  - title: mooskys_hype
+    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1673044649/items/euzqgd4ullkzk3lfi6rx.jpg
+    url: https://copt.io/shop/mooskys_hype/
+  - title: Hanginwitcoop
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1673051042/items/re3kjda67tplfaq1nsr5.jpg
+    url: https://copt.io/shop/Hanginwitcoop/
   - title: ktown.resells
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1666762551/items/r6bjey96jjtbum8ih4kf.jpg
     url: https://copt.io/shop/ktown.resells/
@@ -26,18 +35,12 @@ sellers:
   - title: youngxflexi
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1673050714/items/pnryhjcyq4jklbc5l84t.jpg
     url: https://copt.io/shop/youngxflexin
-  - title: fidel.ludena
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664416270/items/hpxzjylhydi2mzi7x3st.jpg
-    url: https://copt.io/shop/fidel.ludena/
   - title: dannysnft
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664853201/items/asp7ypkiupg73ftoz6e2.jpg
     url: https://copt.io/shop/dannysnft/
   - title: snkr%20feinz%20vi
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1670926663/items/sd7hc0lcx0jzjjdbemew.jpg
     url: https://copt.io/shop/snkr%20feinz%20vip
-  - title: mooskys_hype
-    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1673044649/items/euzqgd4ullkzk3lfi6rx.jpg
-    url: https://copt.io/shop/mooskys_hype/
   - title: Nysole.swap
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663809039/items/gz53ktmyfbiqkjzwp6zt.jpg
     url: https://copt.io/shop/Nysole.swap/
@@ -50,9 +53,6 @@ sellers:
   - title: deadstock.obsessions
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1673044972/items/lhisznnylo0fyfjj0zlu.jpg
     url: https://copt.io/shop/deadstock.obsessions/
-  - title: Hanginwitcoop
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1673051042/items/re3kjda67tplfaq1nsr5.jpg
-    url: https://copt.io/shop/Hanginwitcoop/
   - title: ctx.sole
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1667488240/items/wdveczfj2sdnemgs0eon.jpg
     url: https://copt.io/shop/ctx.soles
