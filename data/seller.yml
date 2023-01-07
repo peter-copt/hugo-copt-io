@@ -2,15 +2,15 @@ sellers:
   - title: Find Curate
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1623122870/items/uakgylha8jexnlyxj3rn.jpg
     url: https://findcurate.co
-  - title: The Shoe Game Co
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1666887513/items/tyhcm99p342oembqwih2.jpg
-    url: https://theshoegameco.com
-  - title: Evasion
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1668368190/items/ut5zinwnpthd3kaz8kqh.png
-    url: https://evasionkicks.com/
   - title: Shmurda
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648175695/items/iucvwyclsqvi96p6rxod.png
     url: https://shmurda.co
+  - title: Evasion
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1668368190/items/ut5zinwnpthd3kaz8kqh.png
+    url: https://evasionkicks.com/
+  - title: The Shoe Game Co
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1666887513/items/tyhcm99p342oembqwih2.jpg
+    url: https://theshoegameco.com
   - title: The Era
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1667339630/items/acyjllvlyuc4ogpibfwc.jpg
     url: https://the-era.us
