@@ -68,12 +68,12 @@ sellers:
   - title: Trapps.Closet
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664998879/items/orthenwcabwanhb3nymr.jpg
     url: https://copt.io/shop/Trapps.Closet/
-  - title: deadstock.obsessions
-    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1673044972/items/lhisznnylo0fyfjj0zlu.jpg
-    url: https://copt.io/shop/deadstock.obsessions/
   - title: ctx.sole
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1667488240/items/wdveczfj2sdnemgs0eon.jpg
     url: https://copt.io/shop/ctx.soles
+  - title: deadstock.obsessions
+    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1673044972/items/lhisznnylo0fyfjj0zlu.jpg
+    url: https://copt.io/shop/deadstock.obsessions/
   - title: ShaolinSoleDow
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1673051182/items/fccad2ix8gejdc9jpqnp.jpg
     url: https://copt.io/shop/ShaolinSoleDown
