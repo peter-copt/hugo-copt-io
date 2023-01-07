@@ -29,6 +29,9 @@ sellers:
   - title: ktown.resells
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1666762551/items/r6bjey96jjtbum8ih4kf.jpg
     url: https://copt.io/shop/ktown.resells/
+  - title: Resell951
+    url: https://copt.io/shop/Resell951/
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1644596582/items/tfcjgoyagtrlvj24uy0w.jpg
   - title: Kickznation58
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1669911594/items/jalx8m9c2ba4vulxaiyk.jpg
     url: https://copt.io/shop/Kickznation586
@@ -80,9 +83,6 @@ sellers:
   - title: pbchavi
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1662577223/items/i6kig0c1pp5qfmfnceau.jpg
     url: https://copt.io/shop/pbchavi/
-  - title: Resell951
-    url: https://copt.io/shop/Resell951/
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1644596582/items/tfcjgoyagtrlvj24uy0w.jpg
 feature:
   enable: true
 cta:
