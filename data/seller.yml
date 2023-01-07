@@ -80,6 +80,9 @@ sellers:
   - title: pbchavi
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1662577223/items/i6kig0c1pp5qfmfnceau.jpg
     url: https://copt.io/shop/pbchavi/
+  - title: Resell951
+    url: https://copt.io/shop/Resell951/
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1644596582/items/tfcjgoyagtrlvj24uy0w.jpg
 feature:
   enable: true
 cta:
