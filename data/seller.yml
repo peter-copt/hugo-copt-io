@@ -66,7 +66,7 @@ sellers:
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1670037052/items/w8xoyqjomshgk93ongbv.png
     url: https://copt.io/shop/SpencersKicks
   - title: BackdoorL
-    image_url: https://copt.io/b6f16ba064c3ce8c726325f2c21f6cf4.png
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1673051310/items/zpurfiongojlpqnbwwos.jpg
     url: https://copt.io/shop/BackdoorLA
   - title: HighAltitude_snkr_c
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1671494109/items/fe9fk4l6niwbphxddhhz.jpg
