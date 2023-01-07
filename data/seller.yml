@@ -32,6 +32,9 @@ sellers:
   - title: Resell951
     url: https://copt.io/shop/Resell951/
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1644596582/items/tfcjgoyagtrlvj24uy0w.jpg
+  - title: 506_soles
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663594726/items/re81yhwps5rnmh0aojqz.jpg
+    url: https://copt.io/shop/506_soles/
   - title: Kickznation58
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1669911594/items/jalx8m9c2ba4vulxaiyk.jpg
     url: https://copt.io/shop/Kickznation586
@@ -77,9 +80,6 @@ sellers:
   - title: Filo.resell
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1672444042/items/tvvdtfv0feyryroteu5r.jpg
     url: https://copt.io/shop/Filo.resell/
-  - title: 506_soles
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1663594726/items/re81yhwps5rnmh0aojqz.jpg
-    url: https://copt.io/shop/506_soles/
   - title: pbchavi
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1662577223/items/i6kig0c1pp5qfmfnceau.jpg
     url: https://copt.io/shop/pbchavi/
