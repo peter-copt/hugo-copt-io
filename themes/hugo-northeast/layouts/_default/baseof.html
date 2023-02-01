@@ -1,5 +1,23 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
+    <script type="text/javascript">
+        window["_gaUserPrefs"] = {
+          ioo: function () {
+            return true;
+          },
+        };
+        window.addEventListener("load", (event) => {
+          const signInButton = document.getElementsByClassName("copt-sign-in");
+          if (signInButton.length) {
+            signInButton[0].addEventListener("click", () => {
+              const loginApp = document.getElementById("login-app");
+              if (loginApp) {
+                loginApp.style.display = "block";
+              }
+            });
+          }
+        });
+      </script>
     <head>
         {{ partial "head/meta.html" . }}
         {{ partialCached "head/css.html" . }}
@@ -24,26 +42,6 @@
 
         {{ $fa := resources.Get "js/all.js" | minify | fingerprint }}
         <script async src="{{- $fa.RelPermalink -}}" integrity="{{- $fa.Data.Integrity -}}"></script>
-
-        <script type="text/javascript">
-            window["_gaUserPrefs"] = {
-              ioo: function () {
-                return true;
-              },
-            };
-            window.addEventListener("load", (event) => {
-              const signInButton = document.getElementsByClassName("copt-sign-in");
-              if (signInButton.length) {
-                signInButton[0].addEventListener("click", () => {
-                  const loginApp = document.getElementById("login-app");
-                  if (loginApp) {
-                    loginApp.style.display = "block";
-                  }
-                });
-              }
-            });
-          </script>
-        
         <embed
           id="login-app"
           defer
