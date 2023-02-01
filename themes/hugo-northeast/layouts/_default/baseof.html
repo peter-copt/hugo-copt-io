@@ -25,6 +25,40 @@
         {{ $fa := resources.Get "js/all.js" | minify | fingerprint }}
         <script async src="{{- $fa.RelPermalink -}}" integrity="{{- $fa.Data.Integrity -}}"></script>
 
+        <script type="text/javascript">
+            window["_gaUserPrefs"] = {
+              ioo: function () {
+                return true;
+              },
+            };
+            window.addEventListener("load", (event) => {
+              const signInButton = document.getElementsByClassName("copt-sign-in");
+              if (signInButton.length) {
+                signInButton[0].addEventListener("click", () => {
+                  const loginApp = document.getElementById("login-app");
+                  if (loginApp) {
+                    loginApp.style.display = "block";
+                  }
+                });
+              }
+            });
+          </script>
+        
+        <embed
+          id="login-app"
+          defer
+          type="text/html"
+          src="https://https://login-copt-io.netlify.app/"
+          style="
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 350px;
+            right: 0;
+            width: 100%;
+            display: none;
+          "
+        />
     </head>
     <body class="page-{{- .Kind }} flex flex-col min-h-screen">
         {{- partial "dev-size-indicator.html" . -}}
@@ -33,7 +67,7 @@
 
             <div class="flex grid grid-cols-1 px-10" style="background-color:#ffcd00">
                 <div class="mx-auto py-5 pt-10">
-                  <button class="h-10 px-6 m-2 text-md text-indigo-100 transition-colors duration-150 bg-black rounded-full focus:shadow-outline hover:bg-indigo-800">
+                  <button class="h-10 px-6 m-2 text-md text-indigo-100 transition-colors duration-150 bg-black rounded-full focus:shadow-outline hover:bg-indigo-800 copt-sign-in">
                       Sign In
                   </button>
                 </div>
