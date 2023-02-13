@@ -17,6 +17,18 @@
             });
           }
         });
+        window.addEventListener("message", (message) => {
+          const { data, origin } = message;
+          if (
+            origin === "https://login-copt-io.netlify.app/" &&
+            data === "hide-login"
+          ) {
+            const loginApp = document.getElementById("login-app");
+            if (loginApp) {
+              loginApp.style.display = "none";
+            }
+          }
+        });
       </script>
     <head>
         {{ partial "head/meta.html" . }}
