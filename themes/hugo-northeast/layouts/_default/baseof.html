@@ -18,6 +18,7 @@
           }
         });
         window.addEventListener("message", (message) => {
+            debugger;
           const { data, origin } = message;
           if (
             origin === "https://login-copt-io.netlify.app/" &&
@@ -63,7 +64,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            height: 350px;
+            height: 100vh;
             right: 0;
             width: 100%;
             display: none;
