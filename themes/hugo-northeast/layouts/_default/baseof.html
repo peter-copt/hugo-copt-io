@@ -80,6 +80,7 @@
           property="twitter:image"
           content="https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1573829055/misc/copt.jpg"
         />
+        <meta content="summary_large_image" property="twitter:card" />
 
         {{ $fa := resources.Get "js/all.js" | minify | fingerprint }}
         <script async src="{{- $fa.RelPermalink -}}" integrity="{{- $fa.Data.Integrity -}}"></script>
