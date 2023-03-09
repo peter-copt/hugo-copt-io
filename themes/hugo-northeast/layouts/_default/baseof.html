@@ -51,6 +51,35 @@
         <meta name="apple-mobile-web-app-capable" content="yes" data-react-helmet="true">
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" data-react-helmet="true">
         <meta name="theme-color" content="#ffcd00" data-react-helmet="true">
+        <meta content="COPT - safe, fast payments." name="title" />
+        <meta
+          name="description"
+          content="Share payable WTS. Get paid. Join our rapidly growing community of buyers and sellers."
+        />
+        <meta content="COPT - safe, fast payments." property="og:title" />
+        <meta
+          property="og:description"
+          content="Share payable WTS. Get paid. Join our rapidly growing community of buyers and sellers."
+        />
+        <meta
+          content="https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1573829055/misc/copt.jpg"
+          property="og:image"
+        />
+        <meta content="200" property="og:image:width" />
+        <meta content="200" property="og:image:height" />
+        <meta content="https://copt.io" property="og:url" />
+
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://copt.io" />
+        <meta property="twitter:title" content="COPT - safe, fast payments." />
+        <meta
+          property="twitter:description"
+          content="Share payable WTS. Get paid. Join our rapidly growing community of buyers and sellers."
+        />
+        <meta
+          property="twitter:image"
+          content="https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1573829055/misc/copt.jpg"
+        />
 
         {{ $fa := resources.Get "js/all.js" | minify | fingerprint }}
         <script async src="{{- $fa.RelPermalink -}}" integrity="{{- $fa.Data.Integrity -}}"></script>
