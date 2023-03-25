@@ -8,21 +8,21 @@ sellers:
   - title: The Shoe Game Co
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1666887513/items/tyhcm99p342oembqwih2.jpg
     url: https://theshoegameco.com
+  - title: The Era
+    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1667339630/items/acyjllvlyuc4ogpibfwc.jpg
+    url: https://the-era.us
   - title: Evasion
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1668368190/items/ut5zinwnpthd3kaz8kqh.png
     url: https://evasionkicks.com/
   - title: Mike Deezy
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1648060083/items/n5o9gdxgx9lh39cohh0j.png
     url: http://mikedeezy.com
-  - title: The Era
-    image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1667339630/items/acyjllvlyuc4ogpibfwc.jpg
-    url: https://the-era.us
-  - title: fidel.ludena
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664416270/items/hpxzjylhydi2mzi7x3st.jpg
-    url: https://copt.io/shop/fidel.ludena/
   - title: mooskys_hype
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1673044649/items/euzqgd4ullkzk3lfi6rx.jpg
     url: https://copt.io/shop/mooskys_hype/
+  - title: fidel.ludena
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1664416270/items/hpxzjylhydi2mzi7x3st.jpg
+    url: https://copt.io/shop/fidel.ludena/
   - title: Hanginwitcoop
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1673051042/items/re3kjda67tplfaq1nsr5.jpg
     url: https://copt.io/shop/Hanginwitcoop/
