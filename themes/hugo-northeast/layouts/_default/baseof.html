@@ -19,30 +19,26 @@
         });
         window.addEventListener("message", (message) => {
           const { data, origin } = message;
-          if (
-            origin === "https://login.copt.io"
-          ) {
-            const loginApp = document.getElementById("login-app");
+          if (origin === 'https://login.copt.io') {
+            const loginApp = document.getElementById('login-app');
             if (loginApp) {
-                if (
-            data === "hide-login") {
-              loginApp.style.display = "none";
-                }
-                if (
-            data === "show-login") {
-              loginApp.style.display = "block";
-                }
+              if (data === 'hide-login') {
+                loginApp.style.display = 'none';
+              }
+              if (data === 'show-login') {
+                loginApp.style.display = 'block';
+              }
             }
           }
-          if (origin === "https://menu.copt.io") {
-            const menuApp = document.getElementById("menu-app");                  
+          if (origin === 'https://menu.copt.io') {
+            const menuApp = document.getElementById('menu-app');
             if (menuApp) {
-              if (data === 'show-menu') {                  
-                menuApp.style.height = "100vh";
-              } 
-            if (data === 'hide-menu') {
-                menuApp.style.height = "43px";
-            }
+              if (data === 'show-menu') {
+                menuApp.style.height = '100vh';
+              }
+              if (data === 'hide-menu') {
+                menuApp.style.height = '43px';
+              }
             }
           }
         });
