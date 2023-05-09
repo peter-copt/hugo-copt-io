@@ -20,12 +20,18 @@
         window.addEventListener("message", (message) => {
           const { data, origin } = message;
           if (
-            origin === "https://login.copt.io" &&
-            data === "hide-login"
+            origin === "https://login.copt.io"
           ) {
             const loginApp = document.getElementById("login-app");
             if (loginApp) {
+                if (
+            data === "hide-login") {
               loginApp.style.display = "none";
+                }
+                if (
+            data === "show-login") {
+              loginApp.style.display = "block";
+                }
             }
           }
           if (origin === "https://menu.copt.io") {
