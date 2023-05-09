@@ -28,6 +28,17 @@
               loginApp.style.display = "none";
             }
           }
+          if (origin === "https://menu.copt.io") {
+            const menuApp = document.getElementById("menu-app");                  
+            if (menuApp) {
+              if (data === 'show-menu') {                  
+                menuApp.style.height = "100vh";
+              } 
+            if (data === 'hide-menu') {
+                menuApp.style.height = "43px";
+            }
+            }
+          }
         });
       </script>
     <head>
@@ -112,7 +123,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            height: 100vh;
+            height: 43px;
             right: 0;
             width: 100%;
             background-color: transparent;
