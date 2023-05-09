@@ -6,29 +6,6 @@
             return true;
           },
         };
-        window.addEventListener("load", (event) => {
-          const signInButton = document.getElementsByClassName("copt-sign-in");
-          if (signInButton.length) {
-            signInButton[0].addEventListener("click", () => {
-              const loginApp = document.getElementById("login-app");
-              if (loginApp) {
-                loginApp.style.display = "block";
-              }
-            });
-          }
-        });
-        window.addEventListener("message", (message) => {
-          const { data, origin } = message;
-          if (
-            origin === "https://login-copt-io.netlify.app" &&
-            data === "hide-login"
-          ) {
-            const loginApp = document.getElementById("login-app");
-            if (loginApp) {
-              loginApp.style.display = "none";
-            }
-          }
-        });
       </script>
     <head>
         {{ partial "head/meta.html" . }}
@@ -84,21 +61,24 @@
 
         {{ $fa := resources.Get "js/all.js" | minify | fingerprint }}
         <script async src="{{- $fa.RelPermalink -}}" integrity="{{- $fa.Data.Integrity -}}"></script>
-        <embed
-          id="login-app"
-          defer
+        <iframe
+          id="menu-app"
+          defer=""
           type="text/html"
-          src="https://login-copt-io.netlify.app/"
+          src="https://menu.copt.io"
           style="
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             height: 100vh;
             right: 0;
             width: 100%;
-            display: none;
+            background-color: transparent;
           "
-        />
+          allowtransparency="true"
+        >
+          COPT
+        </iframe>
     </head>
     <body class="page-{{- .Kind }} flex flex-col min-h-screen">
         {{- partial "dev-size-indicator.html" . -}}
