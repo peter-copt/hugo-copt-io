@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
     <script type="text/javascript">
-        window["_gaUserPrefs"] = {
-          ioo: function () {
-            return true;
-          },
-        };
         window.addEventListener("load", (event) => {
           const signInButton = document.getElementsByClassName("copt-sign-in");
           if (signInButton.length) {
@@ -49,6 +44,7 @@
         {{ partial "head/meta.html" . }}
         {{ partialCached "head/css.html" . }}
         {{ partial "head/external.html" . }}
+        {{ template "_internal/google_analytics.html" . }}
         <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
         <link href="https://fonts.cdnfonts.com/css/gotham" rel="stylesheet">
         <style>
