@@ -8,6 +8,9 @@ sellers:
   - title: The Era
     image_url: https://res.cloudinary.com/copt/image/upload/w_300,h_300,c_fill,f_auto,fl_lossy,q_auto/v1667339630/items/acyjllvlyuc4ogpibfwc.jpg
     url: https://the-era.us
+  - title: Evasion
+    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1668368190/items/ut5zinwnpthd3kaz8kqh.png
+    url: https://evasionkicks.com/
   - title: Validd Sneakers
     url: https://shop.copt.io/validdsneakers
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1680133560/items/fbezxfcdcbyttboq1ulr.jpg
@@ -20,9 +23,6 @@ sellers:
   - title: Kick Narimasu
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1674946820/items/fg0fetwf5qg3pqqjcdrv.jpg
     url: https://kicknarimasu.com/
-  - title: Evasion
-    image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1668368190/items/ut5zinwnpthd3kaz8kqh.png
-    url: https://evasionkicks.com/
   - title: Elite Kickz
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1641336827/items/d9z4ipfcmixl2lkgpp3f.jpg
     url: https://elitekickzhoboken.com/
