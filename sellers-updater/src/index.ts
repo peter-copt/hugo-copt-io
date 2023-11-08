@@ -1,105 +1,94 @@
 import fs from "fs";
-import { Data, data } from "./sellers";
 import YAML from "yaml";
 import path from "path";
-import promisify from "promisify-node";
-import fs_extra from "fs-extra";
-
+import axios from "axios";
+import "dotenv/config";
 import NodeGit from "nodegit";
+import { getPersonalShopFullUrl } from "./utils";
 
-async function processData() {
-  let directoryName = "../../data";
+const agentInstance = axios.create({
+  baseURL: process.env.API_URL,
+  timeout: 40000,
+});
+
+(async () => {
+  const repo = await NodeGit.Repository.open(
+    path.resolve(__dirname, "../../.git")
+  );
+  let directoryName = "data";
   let fileName = "seller.yml";
-  const output: Data = await new Promise((resolve) => {
-    setTimeout(() => {
-      resolve(data);
-    }, 100);
+
+  const sellers = await agentInstance.get(`Profiles/hasSellingLastWeek`, {
+    headers: { Authorization: `Bearer ${process.env.JWT}` },
   });
 
-  output.sellers = [
-    ...output.sellers,
-    {
-      title: "pasha",
-      image_url:
-        "https://res.cloudinary.com/copt/image/upload/v1639652148/f_auto,fl_lossy,q_auto/items/suqzox29gqv6jwilx4xj.jpg",
-      url: "https://staging.copt.io/pasha",
-    },
-  ];
+  const data = sellers.data.map((x: any) => {
+    return {
+      title: x.name,
+      image_url: x.img?.replace("/items", "/f_auto,fl_lossy,q_auto/items"),
+      url: getPersonalShopFullUrl(x.name),
+    };
+  });
+  console.log(data);
 
-  const doc = YAML.stringify(output);
-  fs.writeFileSync(path.join(__dirname, directoryName, fileName), doc);
+  const doc = YAML.stringify({ sellers: [...data] });
+  await fs.promises.mkdir(path.join(repo.workdir(), directoryName), {
+    recursive: true,
+  });
 
-  const pathToRepo = path.resolve("../");
+  await fs.promises.writeFile(
+    path.join(repo.workdir(), directoryName, fileName),
+    doc
+  );
 
-  let index: any;
-  let repo: any;
-  let oid: any;
-  let remote: any;
+  const index = await repo.refreshIndex();
 
-  NodeGit.Repository.open(pathToRepo)
-    .then(function (repoResult) {
-      repo = repoResult;
-      return repoResult;
-      // const dir = fse.ensureDir(path.join(repo.workdir(), directoryName));
-      // console.log(dir);
-      // return dir;
-    })
-    .then((repo) => {
-      return repo.refreshIndex();
-    })
-    .then(function (indexResult) {
-      index = indexResult;
-    })
-    .then(function () {
-      return index
-        .addByPath(directoryName, fileName)
-        .then(() => {
-          return index.write();
-        })
-        .then(() => {
-          return index.writeTree();
-        });
-    })
-    .then((oidResult) => {
-      oid = oidResult;
-      return NodeGit.Reference.nameToId(repo, "HEAD");
-    })
-    .then((head) => {
-      return repo.getCommit(head);
-    })
-    .then((parent) => {
-      var author = NodeGit.Signature.create(
-        "Pavel",
-        "pavel@copt.io",
-        123456789,
-        60
-      );
-      var committer = NodeGit.Signature.create(
-        "Pavel",
-        "pavel@copt.io",
-        987654321,
-        90
-      );
-      return repo.createCommit(
-        "HEAD",
-        author,
-        committer,
-        "updated sellers",
-        oid,
-        [parent]
-      );
-    })
-    .then((commitId) => {
-      return repo.getRemote("origin");
-    })
-    .then((remote) => {
-      // return remote.push(["refs/heads/hugo-new:refs/heads/hugo-new"], {
-      //   callbacks: () => false,
-      // });
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-}
+  await index.addByPath(path.posix.join(directoryName, fileName));
+  await index.write();
 
-processData();
+  const oid = await index.writeTree();
+
+  const parent = await repo.getHeadCommit();
+  const author = NodeGit.Signature.now("Pavel Mironov", "pavel@copt.io");
+  const committer = NodeGit.Signature.now("Pavel Mironov", "pavel@copt.io");
+
+  const commitId = await repo.createCommit(
+    "HEAD",
+    author,
+    committer,
+    "update sellers via app",
+    oid,
+    [parent]
+  );
+
+  const remote = await NodeGit.Remote.lookup(repo, "origin");
+
+  const publickey = fs
+    .readFileSync(path.resolve(__dirname, "../keys/id_ed25519"))
+    .toString();
+  const privatekey = fs
+    .readFileSync(path.resolve(__dirname, "../keys/id_ed25519.pub"))
+    .toString();
+  const passphrase = "copthype";
+  try {
+    const pushResult = await remote.push(
+      ["refs/heads/hugo-new:refs/heads/hugo-new"],
+      {
+        callbacks: {
+          credentials: function (url: any, userName: any) {
+            return NodeGit.Credential.sshKeyMemoryNew(
+              userName,
+              publickey,
+              privatekey,
+              passphrase
+            );
+          },
+        },
+      }
+    );
+  } catch (err) {
+    console.error(err);
+  }
+
+  // console.log(`Done: ${pushResult}`);
+})();

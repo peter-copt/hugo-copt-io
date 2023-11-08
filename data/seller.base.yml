@@ -95,9 +95,6 @@ sellers:
   - title: pbchavi
     image_url: https://res.cloudinary.com/copt/image/upload/f_auto,fl_lossy,q_auto/v1662577223/items/i6kig0c1pp5qfmfnceau.jpg
     url: https://copt.io/shop/pbchavi/
-  - title: test
-    image_url: "123123"
-    url: test
 feature:
   enable: true
 cta:
