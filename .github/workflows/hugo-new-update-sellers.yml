@@ -12,9 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-    
+
+      - name: Install yq
+        run: wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && chmod +x /usr/bin/yq
+        
       - name: Update file
-        run: echo  ${{ github.event.inputs.data }} > ./data/seller.yml
+        run: echo ${{ github.event.inputs.data }} | yq -p json -o yaml > ./data/seller.yml
 
       - name: Commit changes
         run: |
