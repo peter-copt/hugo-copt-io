@@ -1,0 +1,28 @@
+name: Update seller.yml file
+
+on:
+  workflow_dispatch:
+    inputs:
+      data:
+        description: 'yml data'
+        required: true
+
+jobs:
+  update-file:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+    
+      - name: Update file
+        run: echo  ${{ github.event.inputs.data }} > ./data/seller.yml
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git branch -m hugo-new
+          git add .
+          git commit -m "Update seller.yml file"
+          git push origin HEAD
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
