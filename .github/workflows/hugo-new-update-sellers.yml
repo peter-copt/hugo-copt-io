@@ -32,7 +32,8 @@ jobs:
             else . + [{title: $item.name, url: $item.id}]
             end
           )')
-          
+      - name: Convert result to yml
+        run: |
           echo "$result" | yq -p json -o yaml > $MAPPED_SELLERS_YML_PATH
 
       - name: Commit changes
