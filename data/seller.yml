@@ -1,6 +1,11 @@
-- image_url: null
-  title: mike
-  url: mikedeezy.com
-- image_url: null
-  title: test123
-  url: test123
+sellers:
+  - image_url: null
+    title: mike
+    url: mikedeezy.com
+  - image_url: null
+    title: test123
+    url: test123
+feature:
+  enable: true
+cta:
+  enable: true
