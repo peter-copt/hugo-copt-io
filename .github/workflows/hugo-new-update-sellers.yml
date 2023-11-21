@@ -22,7 +22,7 @@ jobs:
       - name: Map sellers urls to last week has sales sellers
         run: |
           file1_content=$(cat $SELLERS_SHOP_JSON_PATH)
-          file2_content='${{ github.event.inputs.data }}'
+          file2_content=$(echo ${{ github.event.inputs.data }} | jq '.')
           
           result=$(jq -n --argfile file1 <(echo "$file1_content") --argfile file2 <(echo "$file2_content") 'reduce $file2[] as $item ([]; 
             if ($file1 | map(select(.username == $item.name)) | length) > 0 
