@@ -1,11 +1,1 @@
-sellers:
-  - image_url: mike1
-    title: mike
-    url: https://mikedeezy.com
-  - image_url: mike2
-    title: test123
-    url: https://shop.copt.io/test123
-feature:
-  enable: true
-cta:
-  enable: true
+
