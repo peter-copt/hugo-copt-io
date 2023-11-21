@@ -32,7 +32,7 @@ jobs:
               sellers: (
                 reduce $file2[] as $item ([]; 
                   if ($file1 | map(select(.username == $item.name)) | length) > 0 
-                  then . + [{image_url: ($item.img | sub("/items"; "/f_auto,fl_lossy,q_auto/items")), title: $item.name, url:("https://" + $file1 | map(select(.username == $item.name))[0].alias)}]
+                  then . + [{image_url: ($item.img | sub("/items"; "/f_auto,fl_lossy,q_auto/items")), title: $item.name, url:("https://" + ($file1 | map(select(.username == $item.name))[0].alias))}]
                   else . + [{image_url: ($item.img | sub("/items"; "/f_auto,fl_lossy,q_auto/items")), title: $item.name, url: ("https://shop.copt.io/" + $item.name)}]
                   end
                 )
