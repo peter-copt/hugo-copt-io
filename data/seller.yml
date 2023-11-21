@@ -1,12 +1,6 @@
-[
-  {
-    "image_url": null,
-    "title": "mike",
-    "url": "mikedeezy.com"
-  },
-  {
-    "image_url": null,
-    "title": "test123",
-    "url": "test123"
-  }
-]
+- image_url: null
+  title: mike
+  url: mikedeezy.com
+- image_url: null
+  title: test123
+  url: test123
