@@ -23,16 +23,12 @@ jobs:
         run: |
           file1_content=$(cat $SELLERS_SHOP_JSON_PATH)
           file2_content='${{ github.event.inputs.data }}'
-          
-          result=$(jq -n --argfile file1 <(echo "$file1_content") --argfile file2 <(echo "$file2_content") 'reduce $file2[] as $item ([]; 
+          jq -n --argfile file1 <(echo "$file1_content") --argfile file2 <(echo "$file2_content") 'reduce $file2[] as $item ([]; 
             if ($file1 | map(select(.username == $item.name)) | length) > 0 
             then . + [{image_url: $item.img, title: $item.name, url: $file1 | map(select(.username == $item.name))[0].alias}]
             else . + [{image_url: $item.img, title: $item.name, url: $item.name}]
             end
-          )')
-      - name: Convert result to yml
-        run: |
-          echo $result > $MAPPED_SELLERS_YML_PATH
+          )' > ./data/seller.yml
 
       - name: Commit changes
         run: |
