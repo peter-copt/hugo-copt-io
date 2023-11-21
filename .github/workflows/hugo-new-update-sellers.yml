@@ -30,6 +30,8 @@ jobs:
             else . + [{image_url: $item.img, title: $item.name, url: $item.name}]
             end
           )')
+
+          echo $result
       - name: Convert result to yml
         run: |
           echo "$result" > $MAPPED_SELLERS_YML_PATH
