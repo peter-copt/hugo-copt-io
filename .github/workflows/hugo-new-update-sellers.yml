@@ -15,6 +15,10 @@ jobs:
       MAPPED_SELLERS_YML_PATH: "./data/seller.yml"
     steps:
       - uses: actions/checkout@v3
+
+      - name: Install yq
+        run: |
+          curl -sLo /usr/local/bin/yq https://github.com/mikefarah/yq/releases/download/3.4.1/yq_linux_amd64
         
       - name: Install jq
         run: sudo apt-get install jq
@@ -28,7 +32,7 @@ jobs:
             then . + [{image_url: $item.img, title: $item.name, url: $file1 | map(select(.username == $item.name))[0].alias}]
             else . + [{image_url: $item.img, title: $item.name, url: $item.name}]
             end
-          )' > ./data/seller.yml
+          )' | yq -p json -o yaml > ./data/seller.yml
 
       - name: Commit changes
         run: |
