@@ -15,8 +15,6 @@ jobs:
       MAPPED_SELLERS_YML_PATH: "./data/seller.yml"
     steps:
       - uses: actions/checkout@v3
-      - name: Install yq
-        run: sudo wget https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 -O /usr/bin/yq && chmod +x /usr/bin/yq
         
       - name: Install jq
         run: sudo apt-get install jq
@@ -34,7 +32,7 @@ jobs:
           )')
       - name: Convert result to yml
         run: |
-          echo "$result" | yq -p json -o yaml > $MAPPED_SELLERS_YML_PATH
+          echo "$result" > $MAPPED_SELLERS_YML_PATH
 
       - name: Commit changes
         run: |
