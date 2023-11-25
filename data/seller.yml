@@ -1,7 +1,4 @@
-sellers:
-  - image_url: https://res.cloudinary.com/copt/image/upload/v1689247806/f_auto,fl_lossy,q_auto/items/marc44zhkmzgxbxnqlue.jpg
-    title: pasha
-    url: https://shop.copt.io/pasha
+sellers: []
 feature:
   enable: true
 cta:
