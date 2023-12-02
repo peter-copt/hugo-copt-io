@@ -1,4 +1,7 @@
-sellers: []
+sellers:
+  - image_url: https://res.cloudinary.com/copt/image/upload/v1623122870/f_auto,fl_lossy,q_auto/items/uakgylha8jexnlyxj3rn.jpg
+    title: Find Curate
+    url: https://findcurate.co
 feature:
   enable: true
 cta:
