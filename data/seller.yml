@@ -1,10 +1,7 @@
 sellers:
-  - image_url: https://res.cloudinary.com/copt/image/upload/v1623122870/f_auto,fl_lossy,q_auto/items/uakgylha8jexnlyxj3rn.jpg
-    title: Find Curate
-    url: https://findcurate.co
-  - image_url: https://res.cloudinary.com/copt/image/upload/v1639652148/f_auto,fl_lossy,q_auto/items/suqzox29gqv6jwilx4xj.jpg
-    title: pasha
-    url: https://shop.copt.io/pasha
+  - image_url: https://res.cloudinary.com/copt/image/upload/v1668368190/f_auto,fl_lossy,q_auto/items/ut5zinwnpthd3kaz8kqh.png
+    title: EvasionKicks
+    url: https://evasionkicks.com
 feature:
   enable: true
 cta:
