@@ -1,7 +1,4 @@
-sellers:
-  - image_url: https://res.cloudinary.com/copt/image/upload/v1668368190/f_auto,fl_lossy,q_auto/items/ut5zinwnpthd3kaz8kqh.png
-    title: EvasionKicks
-    url: https://evasionkicks.com
+sellers: []
 feature:
   enable: true
 cta:
