@@ -1,4 +1,10 @@
-sellers: []
+sellers:
+  - image_url: https://res.cloudinary.com/copt/image/upload/v1623122870/f_auto,fl_lossy,q_auto/items/uakgylha8jexnlyxj3rn.jpg
+    title: Find Curate
+    url: https://findcurate.co
+  - image_url: https://res.cloudinary.com/copt/image/upload/v1676440428/f_auto,fl_lossy,q_auto/items/hfsnat0raanrld4uhdwu.jpg
+    title: RileyGotGrails
+    url: https://shop.copt.io/RileyGotGrails
 feature:
   enable: true
 cta:
