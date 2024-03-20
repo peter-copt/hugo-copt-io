@@ -1,31 +1,8 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
     <script type="text/javascript">
-        window.addEventListener("load", (event) => {
-          const signInButton = document.getElementsByClassName("copt-sign-in");
-          if (signInButton.length) {
-            signInButton[0].addEventListener("click", () => {
-                window.open('https://shop.copt.io/sell-item', '_self')
-              // const loginApp = document.getElementById("login-app");
-              // if (loginApp) {
-              //  loginApp.style.display = "block";
-              // }
-            });
-          }
-        });
         window.addEventListener("message", (message) => {
           const { data, origin } = message;
-          if (origin === 'https://login.copt.io') {
-            const loginApp = document.getElementById('login-app');
-            if (loginApp) {
-              if (data === 'hide-login') {
-                loginApp.style.display = 'none';
-              }
-              if (data === 'show-login') {
-                loginApp.style.display = 'block';
-              }
-            }
-          }
           if (origin === 'https://menu.copt.io') {
             const menuApp = document.getElementById('menu-app');
             if (menuApp) {
@@ -167,26 +144,6 @@
         {{ $fa := resources.Get "js/all.js" | minify | fingerprint }}
         <script async src="{{- $fa.RelPermalink -}}" integrity="{{- $fa.Data.Integrity -}}"></script>
         <iframe
-          id="login-app"
-          defer=""
-          type="text/html"
-          src="https://login.copt.io"
-          style="
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 100vh;
-            right: 0;
-            width: 100%;
-            background-color: transparent;
-            display: none;
-            z-index: 2;
-          "
-          allowtransparency="true"
-        >
-          COPT login
-        </iframe>
-        <iframe
           id="menu-app"
           defer=""
           type="text/html"
@@ -302,6 +259,7 @@
 
           <div class="mx-auto">
           <button
+            onClick="() => window.open('https://shop.copt.io/sell-item', '_self')"
             class="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-black rounded-full focus:shadow-outline hover:bg-indigo-800 copt-sign-in"
             style="
               font-family: 'Gotham';
