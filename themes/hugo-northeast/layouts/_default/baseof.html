@@ -5,10 +5,11 @@
           const signInButton = document.getElementsByClassName("copt-sign-in");
           if (signInButton.length) {
             signInButton[0].addEventListener("click", () => {
-              const loginApp = document.getElementById("login-app");
-              if (loginApp) {
-                loginApp.style.display = "block";
-              }
+                window.open('https://shop.copt.io/sell-item', '_self')
+              // const loginApp = document.getElementById("login-app");
+              // if (loginApp) {
+              //  loginApp.style.display = "block";
+              // }
             });
           }
         });
