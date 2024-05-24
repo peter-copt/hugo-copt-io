@@ -15,13 +15,16 @@
             }
           } else if (origin === 'https://stats.copt.io') {
               const statsApp = document.getElementById("stats-app");
+              const menuApp = document.getElementById('menu-app');
               const focused = statsApp.getAttribute("focused");
               if (focused) {
                 statsApp.removeAttribute("focused");
                 statsApp.style.height = "550px";
+                menuApp.style.visibility='visible';
               } else {
                 statsApp.setAttribute("focused", true);
                 statsApp.style.height = "100vh";
+                menuApp.style.visibility='hidden';
                 statsApp.scrollIntoView();
               }
           }
