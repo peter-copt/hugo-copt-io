@@ -203,7 +203,7 @@
         {{- partial "dev-size-indicator.html" . -}}
 
         <div class="flex grid grid-cols-1 gap-6">
-          <div class="flex grid grid-cols-1">
+          <div class="flex grid grid-cols-1 hide-on-explore">
             <div
               class="mx-auto py-10 h-200 w-full splash"
               style="
@@ -287,7 +287,7 @@
           COPT
         </iframe>
       </div>
-      <div class="mx-10">
+      <div class="mx-10" hide-on-explore>
         <p
           class="text-6xl sm:text-center"
           style="
@@ -579,7 +579,7 @@
         </div>
       </div>
 
-          <div class="mx-auto">
+          <div class="mx-auto hide-on-explore">
           <button
             onClick="window.open('https://shop.copt.io/sell-item', '_self')"
             class="h-12 px-6 m-2 text-lg text-indigo-100 transition-colors duration-150 bg-black rounded-full focus:shadow-outline hover:bg-indigo-800 copt-sign-in"
@@ -596,7 +596,7 @@
           </button>
           </div>
 
-            <div class="flex grid grid-cols-1 gap-6">
+            <div class="flex grid grid-cols-1 gap-6 hide-on-explore">
               <div class="m-auto pt-20 col-span-1 px-10">
                 <p class="text-3xl px-10 pb-5" style="font-family: Gotham; font-weight: 400;font-style: normal;text-align: center;">
                   OUR VERIFIED SELLERS
