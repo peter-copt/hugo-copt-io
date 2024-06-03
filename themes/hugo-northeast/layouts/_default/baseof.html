@@ -17,16 +17,23 @@
               const statsApp = document.getElementById("stats-app");
               const menuApp = document.getElementById('menu-app');
               const focused = statsApp.getAttribute("focused");
+              const toHide = document.getElementsByClassName("hide-on-explore");
               if (focused) {
                 statsApp.removeAttribute("focused");
                 statsApp.style.height = "640px";
                 menuApp.style.visibility='visible';
+                for (let i = 0; i < toHide.length; i++) {
+                  toHide[i].style.display = "initial";
+                }
               } else {
                 statsApp.setAttribute("focused", true);
                 statsApp.style.height = "100vh";
                 menuApp.style.visibility='hidden';
-                statsApp.scrollIntoView();
+                for (let i = 0; i < toHide.length; i++) {
+                  toHide[i].style.display = "none";
+                }
               }
+            statsApp.scrollIntoView();
           }
         });
       </script>
