@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang='{{ .Site.LanguageCode }}'>
     <script type="text/javascript">
+      const bannerHeight = 300
+      const loadMoreHeight = 40
+      const newListBatchHeight = 50*9;
+      let iframeHeight = 590 + bannerHeight + loadMoreHeight
+            
         window.addEventListener("message", (message) => {
           const { data, origin } = message;
           if (origin === 'https://menu.copt.io') {
@@ -18,6 +23,15 @@
               const menuApp = document.getElementById('menu-app');
               const focused = statsApp.getAttribute("focused");
               const toHide = document.getElementsByClassName("hide-on-explore");
+
+
+              if (data === "load-more") {
+                  iframeHeight += newListBatchHeight;
+                  statsApp.style.height = `${iframeHeight}px`;
+                  return;
+              }
+
+              
               if (focused) {
                 statsApp.removeAttribute("focused");
                 statsApp.style.height = "640px";
@@ -279,7 +293,7 @@
               </p>
             </div>
           </div>
-      <div style="width: 100%; height: calc(100vh - 100px)" id="stats-app">
+      <div style="width: 100%; height: 930px" id="stats-app">
         <iframe
           id="stats-app"
           defer=""
